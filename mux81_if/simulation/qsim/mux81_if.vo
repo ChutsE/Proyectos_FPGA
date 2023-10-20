@@ -1,0 +1,343 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
+
+// DATE "02/25/2022 16:45:08"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mux81_if (
+	i,
+	s,
+	x);
+input 	[7:0] i;
+input 	[2:0] s;
+output 	x;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \Mux0~0_combout ;
+wire \Mux0~1_combout ;
+wire \Mux0~2_combout ;
+wire \Mux0~3_combout ;
+wire \Mux0~4_combout ;
+wire [7:0] \i~combout ;
+wire [2:0] \s~combout ;
+
+
+maxii_io \i[5]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [5]),
+	.padio(i[5]));
+// synopsys translate_off
+defparam \i[5]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \s[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\s~combout [0]),
+	.padio(s[0]));
+// synopsys translate_off
+defparam \s[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \i[6]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [6]),
+	.padio(i[6]));
+// synopsys translate_off
+defparam \i[6]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \s[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\s~combout [1]),
+	.padio(s[1]));
+// synopsys translate_off
+defparam \s[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \i[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [4]),
+	.padio(i[4]));
+// synopsys translate_off
+defparam \i[4]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \Mux0~0 (
+// Equation(s):
+// \Mux0~0_combout  = (\s~combout [0] & (((\s~combout [1])))) # (!\s~combout [0] & ((\s~combout [1] & (\i~combout [6])) # (!\s~combout [1] & ((\i~combout [4])))))
+
+	.clk(gnd),
+	.dataa(\s~combout [0]),
+	.datab(\i~combout [6]),
+	.datac(\s~combout [1]),
+	.datad(\i~combout [4]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\Mux0~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \Mux0~0 .lut_mask = "e5e0";
+defparam \Mux0~0 .operation_mode = "normal";
+defparam \Mux0~0 .output_mode = "comb_only";
+defparam \Mux0~0 .register_cascade_mode = "off";
+defparam \Mux0~0 .sum_lutc_input = "datac";
+defparam \Mux0~0 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \i[7]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [7]),
+	.padio(i[7]));
+// synopsys translate_off
+defparam \i[7]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \Mux0~1 (
+// Equation(s):
+// \Mux0~1_combout  = (\s~combout [0] & ((\Mux0~0_combout  & ((\i~combout [7]))) # (!\Mux0~0_combout  & (\i~combout [5])))) # (!\s~combout [0] & (((\Mux0~0_combout ))))
+
+	.clk(gnd),
+	.dataa(\i~combout [5]),
+	.datab(\s~combout [0]),
+	.datac(\Mux0~0_combout ),
+	.datad(\i~combout [7]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\Mux0~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \Mux0~1 .lut_mask = "f838";
+defparam \Mux0~1 .operation_mode = "normal";
+defparam \Mux0~1 .output_mode = "comb_only";
+defparam \Mux0~1 .register_cascade_mode = "off";
+defparam \Mux0~1 .sum_lutc_input = "datac";
+defparam \Mux0~1 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \i[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [2]),
+	.padio(i[2]));
+// synopsys translate_off
+defparam \i[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \i[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [1]),
+	.padio(i[1]));
+// synopsys translate_off
+defparam \i[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \i[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [0]),
+	.padio(i[0]));
+// synopsys translate_off
+defparam \i[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \Mux0~2 (
+// Equation(s):
+// \Mux0~2_combout  = (\s~combout [1] & (((\s~combout [0])))) # (!\s~combout [1] & ((\s~combout [0] & (\i~combout [1])) # (!\s~combout [0] & ((\i~combout [0])))))
+
+	.clk(gnd),
+	.dataa(\s~combout [1]),
+	.datab(\i~combout [1]),
+	.datac(\s~combout [0]),
+	.datad(\i~combout [0]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\Mux0~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \Mux0~2 .lut_mask = "e5e0";
+defparam \Mux0~2 .operation_mode = "normal";
+defparam \Mux0~2 .output_mode = "comb_only";
+defparam \Mux0~2 .register_cascade_mode = "off";
+defparam \Mux0~2 .sum_lutc_input = "datac";
+defparam \Mux0~2 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \i[3]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i~combout [3]),
+	.padio(i[3]));
+// synopsys translate_off
+defparam \i[3]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \Mux0~3 (
+// Equation(s):
+// \Mux0~3_combout  = (\s~combout [1] & ((\Mux0~2_combout  & ((\i~combout [3]))) # (!\Mux0~2_combout  & (\i~combout [2])))) # (!\s~combout [1] & (((\Mux0~2_combout ))))
+
+	.clk(gnd),
+	.dataa(\i~combout [2]),
+	.datab(\s~combout [1]),
+	.datac(\Mux0~2_combout ),
+	.datad(\i~combout [3]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\Mux0~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \Mux0~3 .lut_mask = "f838";
+defparam \Mux0~3 .operation_mode = "normal";
+defparam \Mux0~3 .output_mode = "comb_only";
+defparam \Mux0~3 .register_cascade_mode = "off";
+defparam \Mux0~3 .sum_lutc_input = "datac";
+defparam \Mux0~3 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \s[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\s~combout [2]),
+	.padio(s[2]));
+// synopsys translate_off
+defparam \s[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \Mux0~4 (
+// Equation(s):
+// \Mux0~4_combout  = ((\s~combout [2] & (\Mux0~1_combout )) # (!\s~combout [2] & ((\Mux0~3_combout ))))
+
+	.clk(gnd),
+	.dataa(\Mux0~1_combout ),
+	.datab(\Mux0~3_combout ),
+	.datac(vcc),
+	.datad(\s~combout [2]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\Mux0~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \Mux0~4 .lut_mask = "aacc";
+defparam \Mux0~4 .operation_mode = "normal";
+defparam \Mux0~4 .output_mode = "comb_only";
+defparam \Mux0~4 .register_cascade_mode = "off";
+defparam \Mux0~4 .sum_lutc_input = "datac";
+defparam \Mux0~4 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \x~I (
+	.datain(\Mux0~4_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(x));
+// synopsys translate_off
+defparam \x~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

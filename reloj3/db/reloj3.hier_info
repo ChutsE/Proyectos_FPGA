@@ -1,0 +1,75 @@
+|reloj3
+clk => clk.IN2
+rst => rst.IN2
+btn1 => maquina.OUTPUTSELECT
+btn1 => maquina.OUTPUTSELECT
+btn2 => btn2.IN1
+uni[0] << uni.DB_MAX_OUTPUT_PORT_TYPE
+uni[1] << uni.DB_MAX_OUTPUT_PORT_TYPE
+uni[2] << uni.DB_MAX_OUTPUT_PORT_TYPE
+uni[3] << uni.DB_MAX_OUTPUT_PORT_TYPE
+dec[0] << dec.DB_MAX_OUTPUT_PORT_TYPE
+dec[1] << dec.DB_MAX_OUTPUT_PORT_TYPE
+dec[2] << dec.DB_MAX_OUTPUT_PORT_TYPE
+dec[3] << dec.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj3|reloj1:x0
+clk => md[0]~reg0.CLK
+clk => md[1]~reg0.CLK
+clk => md[2]~reg0.CLK
+clk => md[3]~reg0.CLK
+clk => mu[0]~reg0.CLK
+clk => mu[1]~reg0.CLK
+clk => mu[2]~reg0.CLK
+clk => mu[3]~reg0.CLK
+clk => segundos[0].CLK
+clk => segundos[1].CLK
+clk => segundos[2].CLK
+clk => segundos[3].CLK
+clk => segundos[4].CLK
+clk => segundos[5].CLK
+rst => always0.IN1
+rst => always1.IN1
+rst => always2.IN1
+mu[0] <= mu[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[1] <= mu[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[2] <= mu[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[3] <= mu[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[0] <= md[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[1] <= md[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[2] <= md[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[3] <= md[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj3|crono9:x1
+clk => d[0]~reg0.CLK
+clk => d[1]~reg0.CLK
+clk => d[2]~reg0.CLK
+clk => d[3]~reg0.CLK
+clk => u[0]~reg0.CLK
+clk => u[1]~reg0.CLK
+clk => u[2]~reg0.CLK
+clk => u[3]~reg0.CLK
+clk => maquina.CLK
+rst => maquina.OUTPUTSELECT
+rst => u.OUTPUTSELECT
+rst => u.OUTPUTSELECT
+rst => u.OUTPUTSELECT
+rst => u.OUTPUTSELECT
+rst => d.OUTPUTSELECT
+rst => d.OUTPUTSELECT
+rst => d.OUTPUTSELECT
+rst => d.OUTPUTSELECT
+ctrl => maquina.OUTPUTSELECT
+ctrl => maquina.OUTPUTSELECT
+u[0] <= u[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+u[1] <= u[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+u[2] <= u[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+u[3] <= u[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[0] <= d[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= d[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= d[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= d[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

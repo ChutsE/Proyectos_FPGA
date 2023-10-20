@@ -1,0 +1,8 @@
+|par4b
+a[0] => x.DATAIN
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+x <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

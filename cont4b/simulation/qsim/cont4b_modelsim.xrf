@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Proyectos_FPGA/cont4b/cont4b.v
+source_file = 1, C:/Proyectos_FPGA/cont4b/Waveform.vwf
+source_file = 1, C:/Proyectos_FPGA/cont4b/db/cont4b.cbx.xml
+design_name = cont4b
+instance = comp, \clk~I , clk, cont4b, 1
+instance = comp, \rst~I , rst, cont4b, 1
+instance = comp, \sal[0]~reg0 , sal[0]~reg0, cont4b, 1
+instance = comp, \ctrl~I , ctrl, cont4b, 1
+instance = comp, \sal[1]~9 , sal[1]~9, cont4b, 1
+instance = comp, \sal[1]~reg0 , sal[1]~reg0, cont4b, 1
+instance = comp, \sal[2]~reg0 , sal[2]~reg0, cont4b, 1
+instance = comp, \sal[3]~reg0 , sal[3]~reg0, cont4b, 1
+instance = comp, \sal[0]~I , sal[0], cont4b, 1
+instance = comp, \sal[1]~I , sal[1], cont4b, 1
+instance = comp, \sal[2]~I , sal[2], cont4b, 1
+instance = comp, \sal[3]~I , sal[3], cont4b, 1

@@ -1,0 +1,29 @@
+|codalu
+clk => sal[0]~reg0.CLK
+clk => sal[1]~reg0.CLK
+clk => sal[2]~reg0.CLK
+clk => sal[3]~reg0.CLK
+clk => maquina~2.DATAIN
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+ctrl => Selector1.IN3
+ctrl => Selector0.IN3
+ctrl => Selector0.IN4
+ctrl => Selector0.IN5
+ctrl => maquina.DATAB
+ctrl => maquina.DATAB
+ctrl => maquina.DATAB
+ctrl => maquina.DATAB
+sal[0] <= sal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= sal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= sal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

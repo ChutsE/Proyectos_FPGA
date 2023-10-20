@@ -1,0 +1,97 @@
+|bloque_mul4b
+X[0] => X[0].IN1
+X[1] => X[1].IN1
+X[2] => X[2].IN1
+X[3] => X[3].IN1
+Y => Y.IN4
+Sx[0] => Sx[0].IN1
+Sx[1] => Sx[1].IN1
+Sx[2] => Sx[2].IN1
+Si => Si.IN1
+So[0] <= mul1b:n0.so
+So[1] <= mul1b:n1.so
+So[2] <= mul1b:n2.so
+So[3] <= mul1b:n3.so
+Co <= mul1b:n3.co
+
+
+|bloque_mul4b|mul1b:n0
+si => si.IN1
+x => x0.IN0
+y => x0.IN1
+ci => ci.IN1
+so <= sum1b:n0.so
+co <= sum1b:n0.co
+
+
+|bloque_mul4b|mul1b:n0|sum1b:n0
+a => x0.IN0
+a => x2.IN0
+b => x0.IN1
+b => x2.IN1
+ci => x1.IN1
+ci => so.IN1
+so <= so.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bloque_mul4b|mul1b:n1
+si => si.IN1
+x => x0.IN0
+y => x0.IN1
+ci => ci.IN1
+so <= sum1b:n0.so
+co <= sum1b:n0.co
+
+
+|bloque_mul4b|mul1b:n1|sum1b:n0
+a => x0.IN0
+a => x2.IN0
+b => x0.IN1
+b => x2.IN1
+ci => x1.IN1
+ci => so.IN1
+so <= so.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bloque_mul4b|mul1b:n2
+si => si.IN1
+x => x0.IN0
+y => x0.IN1
+ci => ci.IN1
+so <= sum1b:n0.so
+co <= sum1b:n0.co
+
+
+|bloque_mul4b|mul1b:n2|sum1b:n0
+a => x0.IN0
+a => x2.IN0
+b => x0.IN1
+b => x2.IN1
+ci => x1.IN1
+ci => so.IN1
+so <= so.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|bloque_mul4b|mul1b:n3
+si => si.IN1
+x => x0.IN0
+y => x0.IN1
+ci => ci.IN1
+so <= sum1b:n0.so
+co <= sum1b:n0.co
+
+
+|bloque_mul4b|mul1b:n3|sum1b:n0
+a => x0.IN0
+a => x2.IN0
+b => x0.IN1
+b => x2.IN1
+ci => x1.IN1
+ci => so.IN1
+so <= so.DB_MAX_OUTPUT_PORT_TYPE
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,43 @@
+|mul4b
+x[0] => r0[0].DATAB
+x[0] => r1[1].DATAB
+x[0] => r2[2].DATAB
+x[0] => r3[3].DATAB
+x[1] => r0[1].DATAB
+x[1] => r1[2].DATAB
+x[1] => r2[3].DATAB
+x[1] => r3[4].DATAB
+x[2] => r0[2].DATAB
+x[2] => r1[3].DATAB
+x[2] => r2[4].DATAB
+x[2] => r3[5].DATAB
+x[3] => r0[3].DATAB
+x[3] => r1[4].DATAB
+x[3] => r2[5].DATAB
+x[3] => r3[6].DATAB
+y[0] => r0[3].OUTPUTSELECT
+y[0] => r0[2].OUTPUTSELECT
+y[0] => r0[1].OUTPUTSELECT
+y[0] => r0[0].OUTPUTSELECT
+y[1] => r1[4].OUTPUTSELECT
+y[1] => r1[3].OUTPUTSELECT
+y[1] => r1[2].OUTPUTSELECT
+y[1] => r1[1].OUTPUTSELECT
+y[2] => r2[5].OUTPUTSELECT
+y[2] => r2[4].OUTPUTSELECT
+y[2] => r2[3].OUTPUTSELECT
+y[2] => r2[2].OUTPUTSELECT
+y[3] => r3[6].OUTPUTSELECT
+y[3] => r3[5].OUTPUTSELECT
+y[3] => r3[4].OUTPUTSELECT
+y[3] => r3[3].OUTPUTSELECT
+z[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[5] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[6] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+z[7] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+
+

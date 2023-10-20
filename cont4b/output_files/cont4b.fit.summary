@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Mar 04 16:18:38 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : cont4b
+Top-level Entity Name : cont4b
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 5 / 240 ( 2 % )
+Total pins : 7 / 80 ( 9 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

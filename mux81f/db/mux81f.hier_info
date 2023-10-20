@@ -1,0 +1,36 @@
+|mux81f
+a => o.IN0
+b => o.IN0
+c => o.IN0
+d => o.IN0
+e => o.IN0
+f => o.IN0
+g => o.IN0
+h => o.IN0
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[0] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[1] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

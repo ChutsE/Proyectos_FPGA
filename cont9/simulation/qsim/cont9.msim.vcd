@@ -1,0 +1,373 @@
+$comment
+	File created using the following command:
+		vcd file cont9.msim.vcd -direction
+$end
+$date
+	Sat Feb 26 10:04:28 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module cont9_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " ctrl $end
+$var reg 1 # rst $end
+$var wire 1 $ sal [3] $end
+$var wire 1 % sal [2] $end
+$var wire 1 & sal [1] $end
+$var wire 1 ' sal [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . clk~combout $end
+$var wire 1 / rst~combout $end
+$var wire 1 0 sal[0]~reg0_regout $end
+$var wire 1 1 ctrl~combout $end
+$var wire 1 2 sal~3_combout $end
+$var wire 1 3 sal[2]~reg0_regout $end
+$var wire 1 4 Equal0~0_combout $end
+$var wire 1 5 sal~5_combout $end
+$var wire 1 6 sal~6_combout $end
+$var wire 1 7 sal[3]~reg0_regout $end
+$var wire 1 8 Equal1~0_combout $end
+$var wire 1 9 sal~1_combout $end
+$var wire 1 : sal[1]~reg0_regout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+0'
+0&
+0%
+0$
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+1/
+00
+01
+02
+03
+04
+05
+06
+07
+18
+09
+0:
+$end
+#20000
+1!
+1.
+#30000
+0#
+0/
+#40000
+0!
+0.
+#60000
+1!
+1.
+10
+19
+08
+1'
+#80000
+0!
+0.
+#100000
+1!
+1.
+1:
+00
+1&
+0'
+#120000
+0!
+0.
+#140000
+1!
+1.
+10
+09
+12
+1'
+#160000
+0!
+0.
+#180000
+1!
+1.
+0:
+13
+00
+0&
+1%
+0'
+#200000
+0!
+0.
+#220000
+1!
+1.
+10
+19
+15
+1'
+#240000
+0!
+0.
+#260000
+1!
+1.
+1:
+00
+16
+05
+1&
+0'
+06
+#280000
+0!
+0.
+#300000
+1!
+1.
+10
+09
+15
+02
+1'
+16
+#320000
+0!
+0.
+#340000
+1!
+1.
+0:
+17
+03
+00
+05
+0&
+1$
+0%
+0'
+#360000
+0!
+0.
+#380000
+1!
+1.
+10
+19
+14
+1'
+#400000
+0!
+0.
+#420000
+1!
+1.
+07
+00
+18
+06
+04
+09
+0$
+0'
+#440000
+0!
+0.
+#460000
+1!
+1.
+10
+19
+08
+1'
+#480000
+0!
+0.
+#490000
+1"
+11
+15
+12
+16
+#500000
+1!
+1.
+00
+09
+18
+05
+02
+0'
+06
+#520000
+0!
+0.
+#540000
+1!
+1.
+17
+10
+08
+16
+14
+19
+15
+12
+1$
+1'
+06
+#560000
+0!
+0.
+#580000
+1!
+1.
+00
+09
+05
+04
+02
+0'
+16
+#600000
+0!
+0.
+#620000
+1!
+1.
+1:
+07
+13
+10
+15
+1&
+0$
+1%
+1'
+#640000
+0!
+0.
+#660000
+1!
+1.
+00
+19
+0'
+#680000
+0!
+0.
+#700000
+1!
+1.
+0:
+10
+0&
+1'
+#720000
+0!
+0.
+#740000
+1!
+1.
+00
+09
+12
+0'
+#760000
+0!
+0.
+#780000
+1!
+1.
+1:
+03
+10
+1&
+0%
+1'
+#800000
+0!
+0.
+#820000
+1!
+1.
+00
+19
+05
+0'
+#840000
+0!
+0.
+#850000
+0"
+01
+06
+02
+#860000
+1!
+1.
+10
+09
+12
+1'
+#880000
+0!
+0.
+#900000
+1!
+1.
+0:
+13
+00
+0&
+1%
+0'
+#920000
+0!
+0.
+#940000
+1!
+1.
+10
+19
+15
+1'
+#960000
+0!
+0.
+#980000
+1!
+1.
+1:
+00
+16
+05
+1&
+0'
+06
+#1000000

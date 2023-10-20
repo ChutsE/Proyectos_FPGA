@@ -1,0 +1,46 @@
+//Jesus Eduardo Esparza Soto
+//Contador de decenas
+
+//Modulo
+
+module reloj1 (clk,rst,mu,md);
+
+	//puertos
+	//sentido    tipo  tamaño   nombre
+	input                       clk,rst;
+	output       reg   [3:0]    mu,md;
+	
+	//alambre y registros
+	reg					 [5:0]    segundos;
+	
+	
+//Asignaciones
+
+	//señales
+	//componentes
+	//secuenciales
+	
+	//contador de segundos///////////////////////////////////
+	always@(posedge clk)
+	begin
+		if(rst||segundos==59)
+			segundos=0;
+		else
+			segundos=segundos+1;
+	end
+	
+	/////////////////////////////////////////////////////////
+	
+	
+	//contador de minutos///////////////////////////////////
+	always@(posedge clk)
+	begin
+		if(rst||mu==59)
+			mu=0;
+		else
+			mu=mu+1;
+	end
+	
+	/////////////////////////////////////////////////////////
+	
+endmodule

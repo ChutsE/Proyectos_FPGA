@@ -1,0 +1,473 @@
+Timing Analyzer report for cont99
+Fri Mar 11 15:25:10 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk'
+ 12. Setup: 'clk3'
+ 13. Setup: 'clk2'
+ 14. Hold: 'clk'
+ 15. Hold: 'clk3'
+ 16. Hold: 'clk2'
+ 17. Setup Transfers
+ 18. Hold Transfers
+ 19. Report TCCS
+ 20. Report RSKM
+ 21. Unconstrained Paths Summary
+ 22. Clock Status Summary
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Unconstrained Input Ports
+ 26. Unconstrained Output Ports
+ 27. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; cont99                                              ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                           ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }  ;
+; clk2       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk2 } ;
+; clk3       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk3 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+
+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 225.02 MHz ; 225.02 MHz      ; clk        ;      ;
+; 235.18 MHz ; 235.18 MHz      ; clk3       ;      ;
+; 242.42 MHz ; 242.42 MHz      ; clk2       ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -3.444 ; -12.973       ;
+; clk3  ; -3.252 ; -10.987       ;
+; clk2  ; -3.125 ; -14.103       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 1.639 ; 0.000         ;
+; clk3  ; 1.780 ; 0.000         ;
+; clk2  ; 2.037 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.289 ; -2.289        ;
+; clk2  ; 0.234  ; 0.000         ;
+; clk3  ; 0.234  ; 0.000         ;
++-------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                     ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -3.444 ; cont9:x0|sal[2] ; cont9:x0|sal[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.111      ;
+; -3.389 ; cont9:x0|sal[1] ; cont9:x0|sal[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 4.056      ;
+; -3.209 ; cont9:x0|sal[3] ; cont9:x0|sal[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.876      ;
+; -3.205 ; cont9:x0|sal[3] ; cont9:x0|sal[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.872      ;
+; -3.200 ; cont9:x0|sal[0] ; cont9:x0|sal[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.867      ;
+; -3.182 ; cont9:x0|sal[1] ; cont9:x0|sal[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.849      ;
+; -3.016 ; cont9:x0|sal[2] ; cont9:x0|sal[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.683      ;
+; -3.001 ; cont9:x0|sal[2] ; cont9:x0|sal[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.668      ;
+; -2.994 ; cont9:x0|sal[0] ; cont9:x0|sal[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.661      ;
+; -2.994 ; cont9:x0|sal[0] ; cont9:x0|sal[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 3.661      ;
+; -1.945 ; cont9:x0|sal[2] ; clk2            ; clk          ; clk         ; 1.000        ; 0.000      ; 2.612      ;
+; -1.866 ; cont9:x0|sal[1] ; clk2            ; clk          ; clk         ; 1.000        ; 0.000      ; 2.533      ;
+; -1.863 ; cont9:x0|sal[1] ; cont9:x0|sal[3] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.530      ;
+; -1.799 ; cont9:x0|sal[0] ; clk2            ; clk          ; clk         ; 1.000        ; 0.000      ; 2.466      ;
+; -1.737 ; cont9:x0|sal[3] ; cont9:x0|sal[2] ; clk          ; clk         ; 1.000        ; 0.000      ; 2.404      ;
+; -1.734 ; cont9:x0|sal[3] ; clk2            ; clk          ; clk         ; 1.000        ; 0.000      ; 2.401      ;
+; -1.193 ; cont9:x0|sal[0] ; cont9:x0|sal[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 1.860      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk3'                                                                                                    ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -3.252 ; cont9:x2|sal[2] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.919      ;
+; -3.243 ; cont9:x2|sal[2] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.910      ;
+; -3.234 ; cont9:x2|sal[3] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.901      ;
+; -3.227 ; cont9:x2|sal[3] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.894      ;
+; -3.158 ; cont9:x2|sal[1] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.825      ;
+; -3.071 ; cont9:x2|sal[1] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.738      ;
+; -3.043 ; cont9:x2|sal[0] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.710      ;
+; -2.807 ; cont9:x2|sal[0] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.474      ;
+; -2.569 ; cont9:x2|sal[0] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.236      ;
+; -2.421 ; cont9:x2|sal[2] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 3.088      ;
+; -1.885 ; cont9:x2|sal[3] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 2.552      ;
+; -1.770 ; cont9:x2|sal[1] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 2.437      ;
+; -1.334 ; cont9:x2|sal[0] ; cont9:x2|sal[0] ; clk3         ; clk3        ; 1.000        ; 0.000      ; 2.001      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk2'                                                                                                    ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; -3.125 ; cont9:x1|sal[0] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.792      ;
+; -3.047 ; cont9:x1|sal[0] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.714      ;
+; -3.008 ; cont9:x1|sal[0] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.675      ;
+; -2.892 ; cont9:x1|sal[2] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.559      ;
+; -2.877 ; cont9:x1|sal[0] ; clk3            ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.544      ;
+; -2.836 ; cont9:x1|sal[2] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.503      ;
+; -2.825 ; cont9:x1|sal[2] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.492      ;
+; -2.541 ; cont9:x1|sal[1] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.208      ;
+; -2.485 ; cont9:x1|sal[1] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.152      ;
+; -2.431 ; cont9:x1|sal[3] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 3.098      ;
+; -2.081 ; cont9:x1|sal[1] ; clk3            ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.748      ;
+; -2.046 ; cont9:x1|sal[0] ; cont9:x1|sal[0] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.713      ;
+; -1.847 ; cont9:x1|sal[3] ; clk3            ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.514      ;
+; -1.835 ; cont9:x1|sal[3] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.502      ;
+; -1.833 ; cont9:x1|sal[3] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.500      ;
+; -1.775 ; cont9:x1|sal[1] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.442      ;
+; -1.591 ; cont9:x1|sal[2] ; clk3            ; clk2         ; clk2        ; 1.000        ; 0.000      ; 2.258      ;
++--------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                     ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 1.639 ; cont9:x0|sal[0] ; cont9:x0|sal[0] ; clk          ; clk         ; 0.000        ; 0.000      ; 1.860      ;
+; 2.180 ; cont9:x0|sal[3] ; clk2            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.401      ;
+; 2.183 ; cont9:x0|sal[3] ; cont9:x0|sal[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.404      ;
+; 2.245 ; cont9:x0|sal[0] ; clk2            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.466      ;
+; 2.309 ; cont9:x0|sal[1] ; cont9:x0|sal[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.530      ;
+; 2.312 ; cont9:x0|sal[1] ; clk2            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.533      ;
+; 2.391 ; cont9:x0|sal[2] ; clk2            ; clk          ; clk         ; 0.000        ; 0.000      ; 2.612      ;
+; 2.749 ; cont9:x0|sal[0] ; cont9:x0|sal[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.970      ;
+; 2.756 ; cont9:x0|sal[2] ; cont9:x0|sal[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.977      ;
+; 2.758 ; cont9:x0|sal[0] ; cont9:x0|sal[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.979      ;
+; 2.760 ; cont9:x0|sal[0] ; cont9:x0|sal[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.981      ;
+; 2.771 ; cont9:x0|sal[2] ; cont9:x0|sal[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.992      ;
+; 2.926 ; cont9:x0|sal[1] ; cont9:x0|sal[2] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.147      ;
+; 2.956 ; cont9:x0|sal[1] ; cont9:x0|sal[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.177      ;
+; 2.970 ; cont9:x0|sal[3] ; cont9:x0|sal[3] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.191      ;
+; 3.445 ; cont9:x0|sal[3] ; cont9:x0|sal[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.666      ;
+; 3.684 ; cont9:x0|sal[2] ; cont9:x0|sal[1] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.905      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk3'                                                                                                    ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 1.780 ; cont9:x2|sal[0] ; cont9:x2|sal[0] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.001      ;
+; 2.191 ; cont9:x2|sal[2] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.412      ;
+; 2.216 ; cont9:x2|sal[1] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.437      ;
+; 2.293 ; cont9:x2|sal[0] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.514      ;
+; 2.331 ; cont9:x2|sal[3] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.552      ;
+; 2.631 ; cont9:x2|sal[2] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.852      ;
+; 2.771 ; cont9:x2|sal[1] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 2.992      ;
+; 2.826 ; cont9:x2|sal[0] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.047      ;
+; 2.930 ; cont9:x2|sal[1] ; cont9:x2|sal[2] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.151      ;
+; 2.961 ; cont9:x2|sal[3] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.182      ;
+; 2.967 ; cont9:x2|sal[2] ; cont9:x2|sal[1] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.188      ;
+; 3.012 ; cont9:x2|sal[0] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.233      ;
+; 3.031 ; cont9:x2|sal[3] ; cont9:x2|sal[3] ; clk3         ; clk3        ; 0.000        ; 0.000      ; 3.252      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk2'                                                                                                    ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 2.037 ; cont9:x1|sal[2] ; clk3            ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.258      ;
+; 2.221 ; cont9:x1|sal[1] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.442      ;
+; 2.255 ; cont9:x1|sal[1] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.476      ;
+; 2.257 ; cont9:x1|sal[1] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.478      ;
+; 2.279 ; cont9:x1|sal[3] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.500      ;
+; 2.281 ; cont9:x1|sal[3] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.502      ;
+; 2.293 ; cont9:x1|sal[3] ; clk3            ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.514      ;
+; 2.492 ; cont9:x1|sal[0] ; cont9:x1|sal[0] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.713      ;
+; 2.527 ; cont9:x1|sal[1] ; clk3            ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.748      ;
+; 2.679 ; cont9:x1|sal[3] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.900      ;
+; 2.778 ; cont9:x1|sal[2] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 2.999      ;
+; 2.780 ; cont9:x1|sal[2] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.001      ;
+; 3.107 ; cont9:x1|sal[0] ; cont9:x1|sal[1] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.328      ;
+; 3.110 ; cont9:x1|sal[0] ; cont9:x1|sal[2] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.331      ;
+; 3.267 ; cont9:x1|sal[2] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.488      ;
+; 3.323 ; cont9:x1|sal[0] ; clk3            ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.544      ;
+; 3.443 ; cont9:x1|sal[0] ; cont9:x1|sal[3] ; clk2         ; clk2        ; 0.000        ; 0.000      ; 3.664      ;
++-------+-----------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 29       ; 0        ; 0        ; 0        ;
+; clk2       ; clk2     ; 26       ; 0        ; 0        ; 0        ;
+; clk3       ; clk3     ; 23       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 29       ; 0        ; 0        ; 0        ;
+; clk2       ; clk2     ; 26       ; 0        ; 0        ; 0        ;
+; clk3       ; clk3     ; 23       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 21    ; 21   ;
+; Unconstrained Output Ports      ; 12    ; 12   ;
+; Unconstrained Output Port Paths ; 12    ; 12   ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
+; clk2   ; clk2  ; Base ; Constrained ;
+; clk3   ; clk3  ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; ctrl       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; c[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; ctrl       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; rst        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; c[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; c[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; d[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; u[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Fri Mar 11 15:25:08 2022
+Info: Command: quartus_sta cont99 -c cont99
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'cont99.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name clk2 clk2
+    Info (332105): create_clock -period 1.000 -name clk3 clk3
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.444
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.444             -12.973 clk 
+    Info (332119):    -3.252             -10.987 clk3 
+    Info (332119):    -3.125             -14.103 clk2 
+Info (332146): Worst-case hold slack is 1.639
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.639               0.000 clk 
+    Info (332119):     1.780               0.000 clk3 
+    Info (332119):     2.037               0.000 clk2 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
+    Info (332119):     0.234               0.000 clk2 
+    Info (332119):     0.234               0.000 clk3 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4674 megabytes
+    Info: Processing ended: Fri Mar 11 15:25:10 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

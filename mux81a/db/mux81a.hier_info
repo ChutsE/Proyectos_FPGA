@@ -1,0 +1,26 @@
+|mux81a
+a => x0.IN0
+b => x0.IN0
+c => x1.IN0
+d => x1.IN0
+e => x2.IN0
+f => x2.IN0
+g => x3.IN0
+h => x3.IN0
+s[0] => x0.IN1
+s[0] => x1.IN1
+s[0] => x2.IN1
+s[0] => x3.IN1
+s[0] => x3.IN1
+s[0] => x2.IN1
+s[0] => x1.IN1
+s[0] => x0.IN1
+s[1] => x4.IN1
+s[1] => x5.IN1
+s[1] => x5.IN1
+s[1] => x4.IN1
+s[2] => o.IN1
+s[2] => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

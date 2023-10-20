@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Mar 11 15:25:04 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : cont99
+Top-level Entity Name : cont99
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 32 / 240 ( 13 % )
+Total pins : 15 / 80 ( 19 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

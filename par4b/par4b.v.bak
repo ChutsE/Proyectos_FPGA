@@ -1,0 +1,15 @@
+
+
+module par4b (a,s);
+
+	input      [3:0] a;
+	output     reg x;
+	
+	always@(a)
+	begin
+		if(a[0]==0)
+			x=1;
+		
+	end
+	
+endmodule

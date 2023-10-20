@@ -1,0 +1,14 @@
+
+module cont9a(clk,rst,sal);
+
+wire           clk2,cl3;
+wire           [3:0]    bcd;
+
+
+assign clk3=(rst==1)? clk:clk2;
+
+escalador x0 (clk,rst,clk2);
+cont9     x1 (clk2,rst,0,bdc);
+bcd7s     x2 (bcd,sal);
+
+endmodule

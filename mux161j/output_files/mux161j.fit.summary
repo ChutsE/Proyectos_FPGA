@@ -1,0 +1,11 @@
+Fitter Status : Successful - Wed Feb 16 16:50:37 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : mux161j
+Top-level Entity Name : mux161j
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 10 / 240 ( 4 % )
+Total pins : 21 / 80 ( 26 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

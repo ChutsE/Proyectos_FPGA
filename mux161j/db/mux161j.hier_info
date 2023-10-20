@@ -1,0 +1,174 @@
+|mux161j
+i[0] => i[0].IN1
+i[1] => i[1].IN1
+i[2] => i[2].IN1
+i[3] => i[3].IN1
+i[4] => i[4].IN1
+i[5] => i[5].IN1
+i[6] => i[6].IN1
+i[7] => i[7].IN1
+i[8] => i[8].IN1
+i[9] => i[9].IN1
+i[10] => i[10].IN1
+i[11] => i[11].IN1
+i[12] => i[12].IN1
+i[13] => i[13].IN1
+i[14] => i[14].IN1
+i[15] => i[15].IN1
+s[0] => s[0].IN2
+s[1] => s[1].IN2
+s[2] => s[2].IN2
+s[3] => s[3].IN1
+x << mux21a:u2.x
+
+
+|mux161j|mux81j:u0
+i[0] => i[0].IN1
+i[1] => i[1].IN1
+i[2] => i[2].IN1
+i[3] => i[3].IN1
+i[4] => i[4].IN1
+i[5] => i[5].IN1
+i[6] => i[6].IN1
+i[7] => i[7].IN1
+s[0] => s[0].IN4
+s[1] => s[1].IN2
+s[2] => s[2].IN1
+x <= mux21a:u6.x
+
+
+|mux161j|mux81j:u0|mux21a:u0
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u1
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u2
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u3
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u4
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u5
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u0|mux21a:u6
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1
+i[0] => i[0].IN1
+i[1] => i[1].IN1
+i[2] => i[2].IN1
+i[3] => i[3].IN1
+i[4] => i[4].IN1
+i[5] => i[5].IN1
+i[6] => i[6].IN1
+i[7] => i[7].IN1
+s[0] => s[0].IN4
+s[1] => s[1].IN2
+s[2] => s[2].IN1
+x <= mux21a:u6.x
+
+
+|mux161j|mux81j:u1|mux21a:u0
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u1
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u2
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u3
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u4
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u5
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux81j:u1|mux21a:u6
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux161j|mux21a:u2
+a => x.IN0
+b => x.IN0
+s => x.IN1
+s => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

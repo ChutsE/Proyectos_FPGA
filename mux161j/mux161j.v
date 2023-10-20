@@ -1,0 +1,29 @@
+//Ramos Scalabrin Victoria Hermila
+//Esparza Soto Jesus Eduardo
+//MULTIPLEXOR DE 4 ENTRADAS
+
+//MODULO//////////////////////////////////////////////////////
+module	mux161j	(i,s,x);
+	//PUERTOS
+	//sentido	tipo	tamaño	nombre
+	input					[15:0]	i;
+	input					[3:0]		s;
+	output							x;
+	//ALAMBRES Y REGISTROS
+	//tipo				tamaño	nombre
+	wire					         x0,x1;
+
+//ASIGNACIONES////////////////////////////////////////////////
+	//señales
+	//assign	señal=valor/operacion
+	
+	//componente
+	//nombre   etiqueta   (puertos)
+	mux81j     u0         (.i(i[7:0]) ,.s(s[2:0]),.x(x0));  
+	mux81j     u1         (.i(i[15:8]),.s(s[2:0]),.x(x1));  
+	
+	mux21a     u2         (.a(x0),.b(x1),.s(s[3]),.x(x));
+	//secuenciales
+	
+
+endmodule

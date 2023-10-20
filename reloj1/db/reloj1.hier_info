@@ -1,0 +1,28 @@
+|reloj1
+clk => md[0]~reg0.CLK
+clk => md[1]~reg0.CLK
+clk => md[2]~reg0.CLK
+clk => md[3]~reg0.CLK
+clk => mu[0]~reg0.CLK
+clk => mu[1]~reg0.CLK
+clk => mu[2]~reg0.CLK
+clk => mu[3]~reg0.CLK
+clk => segundos[0].CLK
+clk => segundos[1].CLK
+clk => segundos[2].CLK
+clk => segundos[3].CLK
+clk => segundos[4].CLK
+clk => segundos[5].CLK
+rst => always0.IN1
+rst => always1.IN1
+rst => always2.IN1
+mu[0] <= mu[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[1] <= mu[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[2] <= mu[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mu[3] <= mu[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[0] <= md[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[1] <= md[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[2] <= md[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+md[3] <= md[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

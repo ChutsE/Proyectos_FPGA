@@ -1,0 +1,10 @@
+|mux41a
+a => ~NO_FANOUT~
+b => ~NO_FANOUT~
+c => ~NO_FANOUT~
+d => ~NO_FANOUT~
+s[0] => ~NO_FANOUT~
+s[1] => ~NO_FANOUT~
+x <= <GND>
+
+

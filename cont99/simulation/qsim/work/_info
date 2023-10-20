@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Proyectos_FPGA/cont99/simulation/qsim
+vcont99
+Z1 !s110 1646439053
+!i10b 1
+!s100 J1NaZ^ZidF[fBNlzV<g`c2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;=Y4@zYIb?GPe3U5k968K0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1646439050
+8cont99.vo
+Fcont99.vo
+!i122 22
+L0 32 1345
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1646439052.000000
+!s107 cont99.vo|
+!s90 -work|work|cont99.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcont99_vlg_vec_tst
+R1
+!i10b 1
+!s100 j76AL2Lf[7QDUGXbe8a<d1
+R2
+I13XHofK8_cmdi9I2nJIYd1
+R3
+R0
+w1646439048
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 23
+L0 30 46
+R4
+r1
+!s85 0
+31
+!s108 1646439053.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

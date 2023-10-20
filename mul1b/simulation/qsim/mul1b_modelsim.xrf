@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Proyectos_FPGA/sum1b/sum1b.v
+source_file = 1, C:/Proyectos_FPGA/mul1b/mul1b.v
+source_file = 1, C:/Proyectos_FPGA/mul1b/Waveform.vwf
+source_file = 1, C:/Proyectos_FPGA/mul1b/db/mul1b.cbx.xml
+design_name = mul1b
+instance = comp, \x~I , x, mul1b, 1
+instance = comp, \y~I , y, mul1b, 1
+instance = comp, \si~I , si, mul1b, 1
+instance = comp, \ci~I , ci, mul1b, 1
+instance = comp, \n0|so~0 , n0|so~0, mul1b, 1
+instance = comp, \n0|co~0 , n0|co~0, mul1b, 1
+instance = comp, \so~I , so, mul1b, 1
+instance = comp, \co~I , co, mul1b, 1

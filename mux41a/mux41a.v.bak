@@ -1,0 +1,18 @@
+//JOEL CHAVEZ
+//MULTIPLEXOR DE 4 ENTRADAS
+
+//MODULO//////////////////////////////////////////////////////
+module	mux41a	(a,b,c,d,s,x);
+	//PUERTOS
+	//sentido	tipo	tamaño	nombre
+	input								a,b,c,d;
+	input					[1:0]		s;
+	output							x;
+	//ALAMBRES Y REGISTROS
+	//tipo				tamaño	nombre
+
+//ASIGNACIONES////////////////////////////////////////////////
+	//assign	señal=valor/operacion
+	assign	x=(a & ~s[1] & ~s[0])|(b & ~s[1] & s[0])|(c & s[1] & ~s[0])|
+					(d & s[1] & s[0]);
+endmodule

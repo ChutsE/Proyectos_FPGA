@@ -1,0 +1,27 @@
+|semaforo
+clk => v~reg0.CLK
+clk => a~reg0.CLK
+clk => r~reg0.CLK
+clk => cont[0].CLK
+clk => cont[1].CLK
+clk => cont[2].CLK
+clk => cont[3].CLK
+clk => cont[4].CLK
+clk => cont[5].CLK
+clk => cont[6].CLK
+clk => maquina~4.DATAIN
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => maquina.OUTPUTSELECT
+rst => cont[3].ENA
+rst => cont[2].ENA
+rst => cont[1].ENA
+rst => cont[0].ENA
+rst => cont[4].ENA
+rst => cont[5].ENA
+rst => cont[6].ENA
+r <= r~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a <= a~reg0.DB_MAX_OUTPUT_PORT_TYPE
+v <= v~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

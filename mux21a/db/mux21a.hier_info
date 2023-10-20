@@ -1,0 +1,7 @@
+|mux21a
+a => x.DATAA
+b => x.DATAB
+s => Decoder0.IN0
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

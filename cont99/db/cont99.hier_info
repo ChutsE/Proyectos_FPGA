@@ -1,0 +1,75 @@
+|cont99
+clk => clk.IN1
+rst => rst.IN3
+ctrl => ctrl.IN3
+u[0] << cont9:x0.sal
+u[1] << cont9:x0.sal
+u[2] << cont9:x0.sal
+u[3] << cont9:x0.sal
+d[0] << cont9:x1.sal
+d[1] << cont9:x1.sal
+d[2] << cont9:x1.sal
+d[3] << cont9:x1.sal
+c[0] << cont9:x2.sal
+c[1] << cont9:x2.sal
+c[2] << cont9:x2.sal
+c[3] << cont9:x2.sal
+
+
+|cont99|cont9:x0
+clk => sal[0]~reg0.CLK
+clk => sal[1]~reg0.CLK
+clk => sal[2]~reg0.CLK
+clk => sal[3]~reg0.CLK
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+sal[0] <= sal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= sal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= sal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont99|cont9:x1
+clk => sal[0]~reg0.CLK
+clk => sal[1]~reg0.CLK
+clk => sal[2]~reg0.CLK
+clk => sal[3]~reg0.CLK
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+sal[0] <= sal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= sal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= sal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|cont99|cont9:x2
+clk => sal[0]~reg0.CLK
+clk => sal[1]~reg0.CLK
+clk => sal[2]~reg0.CLK
+clk => sal[3]~reg0.CLK
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+sal[0] <= sal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] <= sal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] <= sal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[3] <= sal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

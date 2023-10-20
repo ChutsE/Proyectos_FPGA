@@ -1,0 +1,12 @@
+
+State Machine - |codalu|maquina
+Name maquina.e7 maquina.e6 maquina.e5 maquina.e4 maquina.e3 maquina.e2 maquina.e1 maquina.e0 maquina.e8 
+maquina.e0 0 0 0 0 0 0 0 0 0 
+maquina.e1 0 0 0 0 0 0 1 1 0 
+maquina.e2 0 0 0 0 0 1 0 1 0 
+maquina.e3 0 0 0 0 1 0 0 1 0 
+maquina.e4 0 0 0 1 0 0 0 1 0 
+maquina.e5 0 0 1 0 0 0 0 1 0 
+maquina.e6 0 1 0 0 0 0 0 1 0 
+maquina.e7 1 0 0 0 0 0 0 1 0 
+maquina.e8 0 0 0 0 0 0 0 1 1 

@@ -1,0 +1,130 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
+
+// DATE "02/18/2022 15:31:06"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mux21a (
+	a,
+	b,
+	s,
+	x);
+input 	a;
+input 	b;
+input 	s;
+output 	x;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \b~combout ;
+wire \a~combout ;
+wire \s~combout ;
+wire \x~0_combout ;
+
+
+maxii_io \b~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\b~combout ),
+	.padio(b));
+// synopsys translate_off
+defparam \b~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \a~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\a~combout ),
+	.padio(a));
+// synopsys translate_off
+defparam \a~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_io \s~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\s~combout ),
+	.padio(s));
+// synopsys translate_off
+defparam \s~I .operation_mode = "input";
+// synopsys translate_on
+
+maxii_lcell \x~0 (
+// Equation(s):
+// \x~0_combout  = ((\s~combout  & (\b~combout )) # (!\s~combout  & ((\a~combout ))))
+
+	.clk(gnd),
+	.dataa(\b~combout ),
+	.datab(\a~combout ),
+	.datac(vcc),
+	.datad(\s~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\x~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \x~0 .lut_mask = "aacc";
+defparam \x~0 .operation_mode = "normal";
+defparam \x~0 .output_mode = "comb_only";
+defparam \x~0 .register_cascade_mode = "off";
+defparam \x~0 .sum_lutc_input = "datac";
+defparam \x~0 .synch_mode = "off";
+// synopsys translate_on
+
+maxii_io \x~I (
+	.datain(\x~0_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(x));
+// synopsys translate_off
+defparam \x~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

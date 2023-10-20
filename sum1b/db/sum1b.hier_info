@@ -1,0 +1,11 @@
+|sum1b
+a => x0.IN0
+a => x2.IN0
+b => x0.IN1
+b => x2.IN1
+ci => x1.IN1
+ci => so.IN1
+so << so.DB_MAX_OUTPUT_PORT_TYPE
+co << co.DB_MAX_OUTPUT_PORT_TYPE
+
+

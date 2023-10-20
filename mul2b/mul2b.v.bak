@@ -1,0 +1,31 @@
+//Ramos Scalabrin Victoria Hermila
+//Esparza Soto Jesus Eduardo
+//multiplicador de 2 bit
+
+//Modulo///////////////////////////////////
+module mul2b (x,y,z);
+	//Puertos
+	//sentido  tipo   tamaño   nombre 
+	input 			   [1:0]     x,y;
+	output			   [3:0]			z;
+	//Alambres
+	//tipo       tamaño  nombre
+	wire			 [3:0] 			sx,cx;
+	
+	//Registros
+
+//Asignaciones//////////////////////////////////////
+	//señales
+	//assign señal=valor/operacion
+	assign x0=x&y;
+	
+	//Componente
+	//nombre   etiqueta (puertos)
+	mul1b     u0       (.si(0)    ,.x(x[0]),.y(y[0]),.ci(0)    ,.so(sx[0]),.co(cx[0]));
+	mul1b     u0       (.si(0)    ,.x(x[1]),.y(y[0]),.ci(cx[0]),.so(sx[1]),.co(cx[1]));
+	mul1b     u0       (.si(sx[1]),.x(x[0]),.y(y[1]),.ci(0)    ,.so(sx[2]),.co(cx[2]));
+	mul1b     u0       (.si(cx[1]),.x(x[1]),.y(y[1]),.ci(cx[2]),.so(sx[3]),.co(cx[3]));
+	
+	//Secuenciales
+endmodule 
+

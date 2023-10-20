@@ -1,0 +1,35 @@
+//Ramos Scalabrin Victoria Hermila
+//Esparza Soto Jesus Eduardo
+//multiplicador de 5 bits
+
+//Mmodulo///
+module mul4b (x,y,z);
+	//Puertos
+	//sentido  tipo   tamaño   nombre 
+	input 			    [4:0]    y,x;
+	output             [9:0]    z;
+	//Alambres 
+	wire               [24:0]   sx;
+	wire					 [3:0]    cx;
+	
+		
+	//Registros
+
+//Asignaciones///
+	//señales
+   assign z[8:4]=sx[24:20];
+	assign z[0]=sx[0];
+	assign z[1]=sx[5];
+	assign z[2]=sx[10];
+	assign z[3]=sx[15];
+	
+	//Componente
+	//nombre          etiqueta (puertos)
+	bloque_mul4b      h0       (.X(x[4:0]),.Y(y[0]),.Sx(0)       ,.Si(0)    ,.So(sx[4:0])  ,.Co(cx[0]));
+	bloque_mul4b      h1       (.X(x[4:0]),.Y(y[1]),.Sx(sx[5:1]) ,.Si(cx[0]),.So(sx[9:5])  ,.Co(cx[1]));
+	bloque_mul4b      h2       (.X(x[4:0]),.Y(y[2]),.Sx(sx[10:6]) ,.Si(cx[1]),.So(sx[14:10]),.Co(cx[2]));
+	bloque_mul4b      h3       (.X(x[4:0]),.Y(y[3]),.Sx(sx[15:11]),.Si(cx[2]),.So(sx[19:15]),.Co(cx[3]));
+	bloque_mul4b      h4       (.X(x[4:0]),.Y(y[3]),.Sx(sx[20:16]),.Si(cx[3]),.So(sx[24:20]),.Co(z[9]) );
+	//Secuenciales
+endmodule 
+

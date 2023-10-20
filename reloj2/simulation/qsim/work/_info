@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Proyectos_FPGA/reloj2/simulation/qsim
+vreloj2
+!s110 1647045967
+!i10b 1
+!s100 hlJ8:5fz0Y<A[FegEbWNc3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITN]eG]6R1YE6zegoG3Ybd0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1647045965
+8reloj2.vo
+Freloj2.vo
+!i122 18
+L0 32 2110
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1647045967.000000
+!s107 reloj2.vo|
+!s90 -work|work|reloj2.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vreloj2_vlg_vec_tst
+!s110 1647045968
+!i10b 1
+!s100 h1leJJKM:cBJ?FgjnLF;70
+R1
+IFTKc3f^eIlG6nQ2RKm??d3
+R2
+R0
+w1647045964
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 19
+L0 30 40
+R3
+r1
+!s85 0
+31
+!s108 1647045968.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

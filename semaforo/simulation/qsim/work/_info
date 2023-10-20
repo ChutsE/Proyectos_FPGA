@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Proyectos_FPGA/semaforo/simulation/qsim
+vsemaforo
+Z1 !s110 1647038761
+!i10b 1
+!s100 2TcnleO8``SUM]Ia`o`[21
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGcRO9o4]9z6bHfCKSLUDn0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1647038758
+8semaforo.vo
+Fsemaforo.vo
+!i122 6
+L0 32 71
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1647038761.000000
+!s107 semaforo.vo|
+!s90 -work|work|semaforo.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vsemaforo_vlg_vec_tst
+R1
+!i10b 1
+!s100 7H[cFLB;7FbJTnQZ3Z5ih1
+R2
+I7e3=6^BGbMzkjM?YhAc3N0
+R3
+R0
+w1647038757
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 38
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7

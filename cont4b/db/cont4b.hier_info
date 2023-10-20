@@ -1,0 +1,19 @@
+|cont4b
+clk => sal[0]~reg0.CLK
+clk => sal[1]~reg0.CLK
+clk => sal[2]~reg0.CLK
+clk => sal[3]~reg0.CLK
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+rst => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+ctrl => sal.OUTPUTSELECT
+sal[0] << sal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[1] << sal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[2] << sal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sal[3] << sal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

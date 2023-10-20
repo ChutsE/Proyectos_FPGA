@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Proyectos_FPGA/mux21a/simulation/qsim
+vmux21a
+!s110 1645219868
+!i10b 1
+!s100 7D0boN`25J_RTlfj?05?22
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+INDnhS^;SR?U@SCF7j73JR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1645219866
+8mux21a.vo
+Fmux21a.vo
+!i122 10
+L0 32 99
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1645219868.000000
+!s107 mux21a.vo|
+!s90 -work|work|mux21a.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vmux21a_vlg_vec_tst
+!s110 1645219869
+!i10b 1
+!s100 HG?=E_KJQhSAR29f0NZ2C3
+R1
+IioME`aD^X20e<3Hz2VR@N2
+R2
+R0
+w1645219865
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 11
+L0 30 46
+R3
+r1
+!s85 0
+31
+!s108 1645219869.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5

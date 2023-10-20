@@ -1,0 +1,43 @@
+//Jesus Eduardo Esparza Soto
+//Contador de decenas 0-99
+
+//Modulo
+
+module cont99 (clk,rst,ctrl,sal);
+
+	//puertos
+	//sentido    tipo  tamaño   nombre
+	input                       clk,rst,ctrl;
+	output       reg   [3:0]         u,d;
+	
+	//alambre y registros
+
+	
+//Asignaciones
+
+	//señales
+	//componentes
+		//nombre	etiqueta		(puetos)
+		cont9    x0          (.clk(clk),.rst(rst),.ctrl(ctrl),.sal(u)); 	
+		cont9    x1          (.clk(clk),.rst(rst),.ctrl(ctrl),.sal(u)); 	
+	//secuenciales
+	
+//	always@(posedge clk) //flancos de subida (posedge)
+//	begin
+//	if(rst) sal=0;
+//	else
+//	begin
+//		if(!ctrl)
+//			begin
+//				sal=sal+1;
+//				if(sal==10) sal=0;
+//				
+//			end
+//		else 
+//			begin
+//				sal=sal-1;
+//				if(sal==15) sal=9;
+//			end
+//		end
+//	end
+endmodule

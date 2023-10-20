@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Proyectos_FPGA/sum1b/sum1b.v
+source_file = 1, C:/Proyectos_FPGA/sum2b/sum2b.v
+source_file = 1, C:/Proyectos_FPGA/sum2b/db/sum2b.cbx.xml
+design_name = sum2b
+instance = comp, \a[0]~I , a[0], sum2b, 1
+instance = comp, \b[0]~I , b[0], sum2b, 1
+instance = comp, \ci~I , ci, sum2b, 1
+instance = comp, \x0|so~0 , x0|so~0, sum2b, 1
+instance = comp, \b[1]~I , b[1], sum2b, 1
+instance = comp, \a[1]~I , a[1], sum2b, 1
+instance = comp, \x0|co~0 , x0|co~0, sum2b, 1
+instance = comp, \x1|so , x1|so, sum2b, 1
+instance = comp, \so[0]~I , so[0], sum2b, 1
+instance = comp, \so[1]~I , so[1], sum2b, 1
+instance = comp, \co~I , co, sum2b, 1
